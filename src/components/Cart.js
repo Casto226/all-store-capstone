@@ -18,7 +18,7 @@ const Cart = () => {
       alert("Please select a shipping method before proceeding to checkout");
       return;
     }
-    console.log("Proceeding to checkout with shipping method:", shippingMethod);
+    alert(`Proceeding to checkout with shipping method: ${shippingMethod}`);
   };
 
   //The cart will start as empty, and will update when the user adds new items.
@@ -46,7 +46,9 @@ const Cart = () => {
                   <Form.Label>Select Shipping Method</Form.Label>
                   <Form.Select
                     value={shippingMethod}
-                    onChange={handleShippingChange}
+                    onChange={(e) => {
+                      setShippingMethod(e.target.value);
+                    }}
                   >
                     <option value="">-- Select a shipping method --</option>
                     <option value="standard">

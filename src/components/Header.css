@@ -1,22 +1,16 @@
 
   
   /* Flexbox container for navigation links */
-  .nav-links {
-    display: flex; /* Flexbox layout to align links side by side */
-    justify-content: flex-start; /* Align links to the left (default behavior) */
-    gap: 20px; /* Adds spacing between the Register and Login links */
+.nav-links {
+    padding: 0px;
+    display: flex;
+    align-items: center;
   }
   
   .access{
     display : flex;
     justify-content: flex-start;
     gap: 1px;
-  }
-  /* Style for individual navigation links */
-  .nav-link {
-    text-decoration: none; /* Removes underline from the links */
-    color: #007bff; /* Link color */
-    font-size: 16px; /* Font size */
   }
   
   .nav-link:hover {
@@ -25,4 +19,17 @@
   p{
     
     color : white
+  }
+
+  .logoutContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+   padding: 9px;
+
+  }
+  .logoutContainer p{
+    margin: 0;
+    margin-right: 10px;
   }

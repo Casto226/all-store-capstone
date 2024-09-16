@@ -33,7 +33,7 @@ const Header = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
+        <Nav className="me-auto nav-links">
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>
@@ -47,9 +47,9 @@ const Header = () => {
             Help
           </Nav.Link>
           {isLoggedIn ? (
-            <div className="access">
+            <div className="logoutContainer">
               <p>Welcome {username}</p>
-              <Button variant="primary" onClick={handleLogout} className="ml-3">
+              <Button variant="primary" onClick={handleLogout}>
                 logout
               </Button>
             </div>
