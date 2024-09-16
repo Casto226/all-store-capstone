@@ -1,0 +1,15 @@
+src
+├── components
+│   ├── Cart.js
+│   ├── Header.js
+│   ├── LandingPage.js
+│   ├── Product.js
+│   ├── ProductPage.js
+│   ├── Register.js
+│   ├── Login.js
+│   └── Help.js
+├── redux
+│   ├── cartSlice.js
+│   ├── userSlice.js
+│   └── store.js
+└── App.js
